@@ -33,4 +33,19 @@ function processarArray(array, funcao) {
     
 }
 
-function dobrarArray ()
+function dobrarArray (array){
+ return processarArray(array, function (numero){
+    return numero*2
+ })
+}
+function aoQuadradoArray (array){
+ return processarArray(array, function (numero){
+    return numero**2
+ })
+}
+function formatarArray (array){
+ return processarArray(array, function (numero){
+    return 'Numero:' + numero
+ })
+}
+
